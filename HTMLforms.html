@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> forms </title>
+    <h1>Taxpayer Portal </h1>
+    <p>onlin Tax Services</p>
+
+    <font color="blue">
+    <u>Home</u>&nbsp;&nbsp;&nbsp;
+    <u><strong> Tax Filing</strong></u>&nbsp;&nbsp;&nbsp;
+    <u>Payments</u>&nbsp;&nbsp;&nbsp;
+    <u>Support</u>&nbsp;&nbsp;&nbsp;
+    <u>About</u>&nbsp;&nbsp;&nbsp;
+    </font>
+
+    <p> Search the Portal </p>
+    <input type="text" placeholder="e.g. VAT return">
+    <button>search</button>
+</head>
+<fieldset>
+<section>
+ <h2> Tax Filing Practice</h2>
+ <p>work through the forms in order. They begin with basic text inputs and finish with a more complete tax return.
+   </p>
+   <p> <strong>Learning goal:</strong>notice how lables, names, values , validation, and grouped work together.</p>
+ </section>
+</fieldset>
+ <section>
+ <h3>1.Taxpayer Contact </h3>
+ <p>A simple form using text, email, telephone , and submeit controls.</p>
+  <fieldset>
+ <form>
+    <label for="fullname">Full Name</label><br>
+      <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="email">Email Address</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+    <label for="telephone"> Telephone</label><br>
+      <input type="number" id="number" name="telephone" placeholder="+968 1234 5678" required><br><br>
+      <button>save contact </button>
+ </form>
+ </fieldset>
+ </section>
+
+ <section>
+    <h4>2.choose Retern</h4>
+
+      <fieldset>
+      <legend>Filing details</legend><br>
+      <label for="tax">Tax type</label><br>
+      <select id="tax" name="tax">
+        <option value="">choose a tax type</option>
+        <option value="VAT">VAT</option>
+        <option value="CIT">CIT</option>
+        <option value="PIT">PIT</option>
+      </select><br><br>
+
+      <label for="periodEnding">period Ending</label><br>
+      <input type="date" id="periodEnding" name="periodEnding">
+          </fieldset>
+    
+    <fieldset>
+        <legend>Return frequency</legend>
+
+        <input type="radio" name="frequency" value="monthly"> Monthly<br>
+        <input type="radio" name="frequency" value="quarterly"> Quarterly<br>
+        <input type="radio" name="frequency" value="annual"> Annual
+    </fieldset>
+
+ </section>
+ 
+ <section>
+ <h5>3. Income and Deductions</h5>
+  <p>This form introduces number inputs, a datalist, a range control, a textarea, and calculated output.</p>
+  <fieldset>
+    <legend>Tax calculation</legend>
+    <label for="grossIncome" >Gross income (OMR)</label><br>
+    <input type="number" id="grossIncome" name="grossIncome"><br><br> 
+
+    <label for="deductions">Allowable deductions (OMR)</label><br>
+        <input type="number" id="deductions" name="deductions">
+
+  </fieldset>
+  <fieldset>
+    <label for="confidence">Confidence</label><br>
+    <input type="number" id="confidence" name="confidence" min="1" max="10">
+    <br>
+    <small>Confidence in this estimate (1–10)</small>
+
+    <label for="notes">Calculation notes</label><br>
+    <textarea id="notes" name="notes" rows="6" cols="40"></textarea><br>
+
+    <button type="submit">Save calculation</button>
+  </fieldset>
+
+  <h2>4. Complete and Submit</h2>
+<p>The final form combines document upload, checkboxes, month and time controls, a declaration, and reset and submit actions.</p>
+<fieldset>
+    <legend><strong>Supporting records</strong></legend>
+    <label for="accounting-month">Accounting month</label><br>
+      <input type="month" id="accounting-month" name="accounting-month"><br>
+
+       <label for="documents">Upload supporting documents</label><br>
+      <input type="file" id="documents" name="documents" accept=".pdf,.csv,.jpg,.jpeg,.png" multiple><br>
+      <small>Accepted examples: PDF, CSV, JPG, or PNG.</small><br>
+
+      <fieldset style="border: none; padding: 0; margin: 0;">
+      <legend style="padding: 0;">Records included:</legend>
+      <input type="checkbox" id="sales-invoices" name="records" value="sales-invoices">
+        <label for="sales-invoices">Sales invoices</label>
+
+        <input type="checkbox" id="expense-receipts" name="records" value="expense-receipts">
+        <label for="expense-receipts">Expense receipts</label>
+
+        <input type="checkbox" id="bank-statement" name="records" value="bank-statement">
+        <label for="bank-statement">Bank statement</label>
+</fieldset>
+ </section>
+ <form>
+    <fieldset>
+        <legend><strong>Declaration</strong></legend>
+
+        <label for="signature">Type your full name as a signature</label><br>
+      <input type="text" id="signature" name="signature"><br> 
+
+      <label for="time-signed">Time signed</label><br>
+      <input type="text" id="time-signed" name="time-signed" size="8">
+      <input type="checkbox" id="confirm" name="confirm">
+      <label for="confirm">I confirm that the information in this practice return is accurate.</label>
+    
+    </fieldset>
+    <button type="submit">Submit practice return</button>
+  <button type="reset">Clear form</button>
+ </form>
+</html>
