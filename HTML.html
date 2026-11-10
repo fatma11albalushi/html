@@ -8,6 +8,8 @@
 
     <title>Taxpayer Portal</title>
 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="thems.css">
     <link rel="stylesheet" href="styleHTML.css">
 </head>
 
@@ -35,6 +37,7 @@
  </header>
 
     <main>   <!-- Main Content -->
+        <section>
         <h2>Welcome to the Portal</h2>
         <p>
             This online system allows registered taxpayers to
@@ -58,7 +61,10 @@
         </p>
 
         <img src="imajes/image.png" alt="Taxpayer Portal Image">
+        <p>Figure 1: Overview of the taxpayer dashboard</p>
+        </section>
 
+        <section>
         <h3>Announcement: VAT Filing Deadline Extended</h3>
 
         <p> The deadline for quarterly VAT filing has been extended by two weeks to accommodate the recent system maintenance window.</p>
@@ -68,7 +74,7 @@
                 All pending VAT submissions will now be accepted
                 until the end of the month without penalty.
             </em>
-        </blockquote>
+        </blockquote><br>
 
         <p>
             <small>
@@ -79,7 +85,9 @@
         <p>
             Published: 20 July 2026
         </p>
+        </section>
 
+        <section>
         <h3>Recent Filing Types</h3>
         <h4>Filing status for the current period</h4>
 
@@ -89,23 +97,25 @@
       <th align="left">Filing Period</th>
       <th align="left">Status</th>
     </tr>
-    <tr>
-      <td><b>VAT</b></td>
+     <tr>
+      <td class="blue-vat"><b>VAT</b></td>
       <td>Q2 2026</td>
       <td>Submitted</td>
     </tr>
     <tr>
-      <td><b>CIT</b></td>
-      <td>2025 Annual</td>
-      <td>Pending</td>
+      <td class="CIT"><b>CIT</b></td>
+      <td class="blue1">2025 Annual</td>
+      <td class="blue2">Pending</td>
     </tr>
     <tr>
-      <td><b>PIT</b></td>
+      <td class="PIT"><b>PIT</b></td>
       <td>2025 Annual</td>
       <td>Draft</td>
     </tr>
   </table>
-        
+    
+  <div class="progress-progress">
+  <div class="progress">
      <p>
          <label for="completion">
             Overall filing completion this quarter:
@@ -115,7 +125,8 @@
              65%
         </progress>
      </p>
-
+</div>
+<div class="progress">
     <p>
          <label for="review">
             Average review score for submitted filings:
@@ -125,7 +136,10 @@
             80%
         </progress>
     </p>
+    </div>
+    </div>
 
+</section>
 
         
     <h5>Register a Payment</h5>

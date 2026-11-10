@@ -93,3 +93,167 @@ letter-spacing: 0px;
 .search button:hover {
     background-color: #4d8dcc;
 }
+
+section{
+    background-color: #FFFFFF;
+    margin-top: 24px;
+    padding: 24px;
+    border: 1xp solid #d0dce8; 
+}
+section h2{
+    color: #1A4E8A;
+    font-size: 22px;
+    padding: 10px 0;
+    border-bottom: 2px solid #d0dce8;
+}
+section p{
+    margin-top: 24px;
+    font-size: 16px;
+    list-style: 28px;
+
+} 
+section u{
+    color: #1A4E8A;
+}
+
+img{
+   display: block;
+    margin: 0 auto;
+
+}
+section p{
+   font-family: Georgia;
+font-weight: 400;
+font-style: Italic;
+font-size: 13.6px;
+line-height: 23.12px;
+letter-spacing: 0px;
+
+}
+
+section{
+    width: 900;
+height: 357.59197998046875;
+opacity: 1;
+padding-top: 20px;
+padding-right: 24px;
+padding-bottom: 20px;
+padding-left: 24px;
+border-radius: 8px;
+border-width: 1px;
+
+}
+section h3{
+ color: #1A4E8A;
+    font-size: 22px;
+    padding: 10px 0;
+    border-bottom: 2px solid #d0dce8;
+}
+section blockquote{
+    background-color: #F0F5FF;
+    width: 850;
+height: 80;
+opacity: 1;
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 10px;
+padding-left: 20px;
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
+border-left-width: 4px;
+border-left: 4px solid #1A4E8A 
+
+}
+
+section{
+    width: 900;
+height: 382.63885498046875;
+opacity: 1;
+padding-top: 20px;
+padding-right: 24px;
+padding-bottom: 20px;
+padding-left: 24px;
+border-radius: 8px;
+border-width: 1px;
+
+} 
+section h4{
+font-family: Georgia;
+font-weight: 700;
+font-style: Bold;
+font-size: 15.2px;
+line-height: 25.84px;
+letter-spacing: 0px;
+color: #1A4E8A;
+}
+
+table{
+ font-family:Georgia ;
+ font-size: 15px;
+}
+
+table th{
+color:  #FFFFFF;
+ width: 250.640625;
+height: 44.9765625;
+opacity: 1;
+top: 33.84px;
+ background: #1A4E8A;
+
+}
+
+.blue-vat{
+width: 250.640625;
+height: 44.84375;
+opacity: 1;
+top: 78.82px;
+background: #1A4E8A;
+color: #FFFFFF;
+}
+.CIT{
+   width: 250.640625;
+height: 44.84375;
+opacity: 1;
+top: 78.82px;
+background: #1A4E8A;
+color: #FFFFFF; 
+}
+.PIT{
+   width: 250.640625;
+height: 44.84375;
+opacity: 1;
+top: 78.82px;
+background: #1A4E8A;
+color: #FFFFFF;  
+}
+.blue1{
+  width: 250.640625;
+height: 44.84375;
+opacity: 1;
+top: 78.82px;
+background-color:  #D0DCE8;
+}
+.blue2{
+    width: 250.640625;
+height: 44.84375;
+opacity: 1;
+top: 78.82px;
+background-color:  #D0DCE8;
+}
+
+.progress-progress{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+
+}
+.progress{
+    margin-top: 30px;
+    width: 49%;
+    display: inline-block;
+}
+.progress{
+    margin-top: 8px;
+    width: 70%;
+}
